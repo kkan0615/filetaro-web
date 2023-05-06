@@ -1,14 +1,12 @@
 {
   "name": "filetaro-web",
-  "version": "0.1.0",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "content-dev": "contentlayer dev",
-    "content-build": "contentlayer build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.2.32",
@@ -18,12 +16,11 @@
     "@types/react-dom": "18.0.11",
     "animate.css": "^4.1.1",
     "autoprefixer": "10.4.14",
-    "contentlayer": "^0.3.1",
     "daisyui": "^2.51.5",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "negotiator": "^0.6.3",
-    "next": "13.4.1-canary.1",
+    "next": "13.4.1",
     "postcss": "8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
