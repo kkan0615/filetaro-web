@@ -1,3 +1,6 @@
+/**
+ * Application Config
+ */
 export const AppConfig = {
   links: {
     download: 'https://github.com/kkan0615/filetaro/releases',

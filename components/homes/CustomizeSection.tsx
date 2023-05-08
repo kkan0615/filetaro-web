@@ -1,6 +1,6 @@
 function CustomizeSectionHomes() {
   return (
-    <section className="hero md:py-24 md:px-0 px-4 py-12">
+    <section className="hero bg-base-200 md:py-24 md:px-0 px-4 py-12">
       <div className="hero-content max-w-content w-full">
         <div className="w-full">
           <h1 className="text-3xl md:text-5xl font-bold">Keywords</h1>

@@ -1,3 +1,7 @@
+/**
+ * DEVELOPING...
+ */
+
 import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link'
 
@@ -18,7 +22,7 @@ function Drawer({ isOpen, close }: Props) {
         <div className="relative w-72 min-h-full bg-base-100 p-4">
           <div className="mb-4 navbar items-center">
             <h1 className="text-xl">
-              title
+              Filetaro
             </h1>
             <button
               className="ml-auto"

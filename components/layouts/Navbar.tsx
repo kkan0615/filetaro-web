@@ -21,9 +21,9 @@ function Navbar() {
     else setIsScrolled(true)
   }
 
-  const toggleDrawer = () => {
-    setIsDrawerOpen(prevState => !prevState)
-  }
+  // const toggleDrawer = () => {
+  //   setIsDrawerOpen(prevState => !prevState)
+  // }
 
   return (
     <>
@@ -36,9 +36,9 @@ function Navbar() {
         <div className="mx-auto max-w-content w-full">
           <Link href="/" className="text-2xl font-bold">Filetaro</Link>
           <div className="mx-auto" />
-          <div className="mr-4 space-x-4 lg:block hidden">
-            <Link className="link link-hover font-bold" href="/documents">Documents</Link>
-          </div>
+          { /*<div className="mr-4 space-x-4 lg:block hidden">*/ }
+          { /*<Link className="link link-hover font-bold" href="/documents">Documents</Link>*/ }
+          { /*</div>*/ }
           {
             isScrolled &&
             <a
@@ -50,12 +50,12 @@ function Navbar() {
               Download
             </a>
           }
-          <button
-            onClick={ toggleDrawer }
-            className="btn btn-sm btn-ghost btn-square lg:hidden flex"
-          >
-            <AiOutlineMenu className="text-xl" />
-          </button>
+          { /*<button*/ }
+          { /*  onClick={ toggleDrawer }*/ }
+          { /*  className="btn btn-sm btn-ghost btn-square lg:hidden flex"*/ }
+          { /*>*/ }
+          { /*  <AiOutlineMenu className="text-xl" />*/ }
+          { /*</button>*/ }
         </div>
       </nav>
       <Drawer isOpen={ isDrawerOpen } close={ () => setIsDrawerOpen(false) } />
