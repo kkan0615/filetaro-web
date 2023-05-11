@@ -29,16 +29,14 @@ yarn build
 ## File Path
 ```text
 ├─ .next/                       # Next.js build file for development
-├─ app/                         # Components
-│  ├─ components/               # Sever components
-│  │  ├─ layouts/               # Layout sever components 
+├─ app/                         # Pages
+│  ├─ robots.ts                 # robots.txt
+│  ├─ sitemap.ts                # sitemap.xml
+│  ├─ global.css                # Main css file
+│  ├─ favicon.ico               # Favicon 
 ├─ components/                  # Components
-├─ contents/                    # Content ( .md, .mdx ...)
-├─ components/                  # Client Components
-│  ├─ layouts/                  # Layout client components 
 ├─ node_modules/                # node modules
-├─ pages/                       # Pages
-├─ public/                      # Assets (images ...)
+├─ public/                      # Public assets. Files in this directory is accessible with path
 ├─ types/                       # Type directory (interfaces, classes, const values ...)
 ├─ .eslintrc.js                 # Eslint.
 ├─ .gitignore                   # gitignore.
