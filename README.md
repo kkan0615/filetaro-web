@@ -10,7 +10,6 @@ yarn install
 ```bash
 yarn dev
 ```
-
 ### Build
 ```
 yarn build
@@ -23,6 +22,7 @@ yarn build
 - [tailwindcss]()
 - [postcss]()
 - [autoprefixer]()
+- [daisyui]()
 - [react-icons](https://react-icons.github.io/react-icons): Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 - [contentlayer](https://www.contentlayer.dev/): Content made easy for developers
 
@@ -51,7 +51,6 @@ yarn build
 ├─ README.md                    # README.md
 ├─ tailwind.config.js           # Tailwind CSS config
 ├─ tsconfig.json                # Typescript config
-├─ turbo.json                   # Turbopack config
 ```
 
 # Supports
