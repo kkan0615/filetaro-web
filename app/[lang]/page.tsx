@@ -1,13 +1,11 @@
+import Image from 'next/image'
 import { Locale } from '@/i18n-config'
-import Navbar from '@/components/layouts/Navbar'
-import HeroHome from '@/components/homes/Hero'
-import Footer from '@/components/layouts/Footer'
 import MovesPic from '@/public/screenshots/moves.png'
 import MovesSlideshowPic from '@/public/screenshots/moves-slideshow.png'
 import RenamesPic from '@/public/screenshots/renames.png'
 import OrganizesPic from '@/public/screenshots/organizes.png'
 import DeletesPic from '@/public/screenshots/deletes.png'
-import Image from 'next/image'
+import HeroHome from '@/components/homes/Hero'
 import AnimationsHomes from '@/components/homes/Animation'
 import SectionHomes from '@/components/homes/Section'
 import CustomizeSection from '@/components/homes/CustomizeSection'
@@ -20,7 +18,6 @@ interface Page {
 }
 
 function Page({ params }: Page) {
-
   return (
     <>
       <AnimationsHomes />

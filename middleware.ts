@@ -1,10 +1,8 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-
-import { i18n } from './i18n-config'
-
 import { match as matchLocale } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
+import { i18n } from './i18n-config'
 
 function getLocale(request: NextRequest): string | undefined {
   // Negotiator expects plain object so we need to transform headers
@@ -15,15 +13,17 @@ function getLocale(request: NextRequest): string | undefined {
   let languages = new Negotiator({ headers: negotiatorHeaders }).languages()
   // @ts-ignore locales are readonly
   const locales: string[] = i18n.locales
+  // matchLocale func takes requestedLocales, availableLocales and defaultLocale
   return matchLocale(languages, locales, i18n.defaultLocale)
 }
 
 export function middleware(request: NextRequest) {
+  // Current pathname
   const pathname = request.nextUrl.pathname
 
   // // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
   // // If you have one
-  // if ([ '/manifest.json' ].includes(pathname)) return
+  if ([ '/google531b56a87f3b4563.html' ].includes(pathname)) return
 
   // Check if there is any supported locale in the pathname
   const IsPathnameMissingLocale = i18n.locales.every(
@@ -41,6 +41,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
+  // Matcher ignoring `/_next/`, robots.txt, sitemap.xml and and `/api/`
   matcher: [ '/((?!api|_next/static|_next/image|favicon.ico|robots|sitemap).*)' ],
 }
